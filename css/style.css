@@ -143,20 +143,28 @@ header .contenedor-texto .texto .profesion {
 }
 
 .main .trabajos .contenedor-trabajos .trabajo {
-    width: 23%;
+    width: 25%;
     margin-bottom: 40px;
 }
 
 .main .trabajos .contenedor-trabajos .trabajo .thumb{
     width: 100%;
-    margin-bottom: 10px;
+    padding: 15px;
+}
+.main .trabajos .contenedor-trabajos .trabajo .thumb:hover{
+    width: 100%;
+    padding: 0px;
 }
 
 .main .trabajos .contenedor-trabajos .trabajo .thumb img {
     width: 100%;
     vertical-align: top;
-    border-radius: 3px;
 }
+
+/* .main .trabajos .contenedor-trabajos .trabajo .thumb img:hover {
+    width: 110%;
+    margin-bottom: none;
+} */
 
 .main .trabajos .contenedor-trabajos .trabajo .descripcion {
     text-align: center;
@@ -247,7 +255,7 @@ footer .redes-sociales {
 footer .redes-sociales .contenedor {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: center;
 }
 
@@ -260,6 +268,7 @@ footer .redes-sociales a {
     border-radius: 3px;
     font-size: 30px;
     margin: 0 20px;
+    border-radius: 8px;
 }
 
 footer .redes-sociales .twitter:hover {
@@ -290,6 +299,33 @@ footer .redes-sociales .instagram:hover {
     }
 }
 
+@media screen and (max-width: 750px){
+    footer .redes-sociales .contenedor {
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width: 620px) {
+    footer .redes-sociales .twitter {
+        background: #1da1f2;
+        margin-bottom: 10px;
+    }
+
+    footer .redes-sociales .facebook {
+        background: #3b5998;
+        margin-bottom: 10px;
+    }
+    footer .redes-sociales .youtube {
+        background: #ff0000;
+        margin-bottom: 10px;
+    }
+    footer .redes-sociales .github {
+        background: #333;
+    }
+    footer .redes-sociales .instagram {
+        background: #e1306c;
+    }
+}
+
 @media screen and (max-width: 500px) {
     header .contenedor-texto{
         margin: 100px 0 140px 0;
@@ -301,6 +337,13 @@ footer .redes-sociales .instagram:hover {
 
     header  .contenedor-texto .texto .profesion {
         font-size: 18px;
+    }
+
+}
+@media screen and (max-width: 466px) {
+    footer .redes-sociales .github {
+        background: #333;
+        margin-bottom: 10px;
     }
 }
 
