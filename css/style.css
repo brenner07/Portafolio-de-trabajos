@@ -119,7 +119,6 @@ header .contenedor-texto .texto .profesion {
 /* ---- ---- TRABAJOS ---- ---- */
 .main .trabajos {
     background: #cecece;
-    padding: 60px 0;
 }
 
 .main .trabajos .contenedor {
@@ -160,11 +159,6 @@ header .contenedor-texto .texto .profesion {
     width: 100%;
     vertical-align: top;
 }
-
-/* .main .trabajos .contenedor-trabajos .trabajo .thumb img:hover {
-    width: 110%;
-    margin-bottom: none;
-} */
 
 .main .trabajos .contenedor-trabajos .trabajo .descripcion {
     text-align: center;
@@ -299,11 +293,6 @@ footer .redes-sociales .instagram:hover {
     }
 }
 
-@media screen and (max-width: 750px){
-    footer .redes-sociales .contenedor {
-        flex-wrap: wrap;
-    }
-}
 @media screen and (max-width: 620px) {
     footer .redes-sociales .twitter {
         background: #1da1f2;
@@ -323,6 +312,9 @@ footer .redes-sociales .instagram:hover {
     }
     footer .redes-sociales .instagram {
         background: #e1306c;
+    }
+    footer .redes-sociales .contenedor {
+        flex-wrap: wrap;
     }
 }
 
